@@ -8,6 +8,7 @@ body {
   margin: 0 auto;
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
+  max-width: 1920px;
 }
 
 a {
@@ -15,9 +16,12 @@ a {
   transition: color 0.2s;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
 
-@import "_partials/header"; 
+@import "_partials/header";
+@import "_partials/location";
+@import "_partials/navigation";
+@import "_partials/tagline";

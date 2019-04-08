@@ -1,0 +1,40 @@
+.tagline {
+  display: flex;
+  color: #ffffff;
+  font-weight: 500;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+  }
+
+  .tagline__main {
+    display: flex;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 100px;
+    text-transform: uppercase;
+  }
+
+  .tagline__explanation {
+    display: flex;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 30px;
+  }
+
+  .fa,
+  .fas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+    color: #ff6801;
+  }
+}

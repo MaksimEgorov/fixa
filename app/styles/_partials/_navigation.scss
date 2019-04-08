@@ -1,0 +1,36 @@
+.navigation-menu {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 40px;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+  }
+
+  .navigation__item {
+    display: flex;
+    font-size: 18px;
+    color: #999999;
+    height: 74px;
+    padding-left: 70px;
+    padding-right: 70px;
+    align-items: center;
+    background-color: #212121;
+    font-weight: 400;
+
+    &:hover {
+      color: #fff;
+      border-bottom: #ff6801 solid 2px;
+    }
+  }
+  .navigation__item--active{
+      background-color: #ff6801;
+      color: #212121;
+      &:hover{
+          color: #212121;
+          border-bottom: none;
+      }
+  }
+}
