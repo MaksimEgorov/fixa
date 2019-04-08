@@ -36,5 +36,9 @@
     height: 50px;
     width: 50px;
     color: #ff6801;
+    transition: 0.3s;
+    &:hover{
+      color:#ffffff;
+    }
   }
 }

@@ -1,0 +1,32 @@
+.features{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    .features__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 425px;
+        color: #ffffff;
+        font-size: 22px;
+        text-align: center;
+
+        img{
+            margin-bottom: 35px;
+        }
+    }
+    .features__item--image1{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../../images/background-advantages.png);
+    }
+    .features__item--image2{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../../images/background-advantages2.png);
+    }
+    .features__item--image3{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../../images/background-advantages3.png);
+    }
+    .features__item--image4{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../../images/background-advantages4.png);
+    }
+}
