@@ -3,51 +3,69 @@
   width: 100%;
   flex-direction: row;
 
-  .features__item {
+  .features__item-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 424px;
     width: 25%;
-    height: 425px;
-    color: #ffffff;
-    font-size: 22px;
-    text-align: center;
+    overflow: hidden;
 
-    img {
-      margin-bottom: 35px;
+
+    .features__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      color: #ffffff;
+      font-size: 22px;
+      text-align: center;
+      overflow: hidden;
+      transition: 0.3s;
+
+      img {
+        margin-bottom: 35px;
+      }
+
+      P {
+        margin-bottom: 0;
+      }
     }
-  }
 
-  .features__item--image1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../../images/background-advantages.png);
+    .features__item--image1 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../../images/background-advantages.png);
 
-    &:hover {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../../images/background-advantages.png);
+      &:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../../images/background-advantages.png);
+        transform: scale(1.1);
+      }
     }
-  }
 
-  .features__item--image2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../../images/background-advantages2.png);
+    .features__item--image2 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../../images/background-advantages2.png);
 
-    &:hover {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../../images/background-advantages2.png);
+      &:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../../images/background-advantages2.png);
+        transform: scale(1.1);
+      }
     }
-  }
 
-  .features__item--image3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../../images/background-advantages3.png);
+    .features__item--image3 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../../images/background-advantages3.png);
 
-    &:hover {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../../images/background-advantages3.png);
+      &:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../../images/background-advantages3.png);
+        transform: scale(1.1);
+      }
     }
-  }
 
-  .features__item--image4 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../../images/background-advantages4.png);
+    .features__item--image4 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../../images/background-advantages4.png);
 
-    &:hover {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../../images/background-advantages4.png);
+      &:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../../images/background-advantages4.png);
+        transform: scale(1.1);
+      }
     }
   }
 }
