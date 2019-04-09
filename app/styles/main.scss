@@ -6,7 +6,7 @@ $grid-gutter-width: 20px;
 
 body {
   margin: 0 auto;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   max-width: 1920px;
 }
@@ -14,6 +14,7 @@ body {
 a {
   color: white;
   transition: color 0.2s;
+  text-decoration: none;
 }
 
 .hidden {
@@ -26,3 +27,5 @@ a {
 @import "_partials/navigation";
 @import "_partials/tagline";
 @import "_partials/features";
+@import "_partials/my-works";
+@import "_partials/work-sample";

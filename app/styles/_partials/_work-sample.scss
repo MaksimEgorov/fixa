@@ -1,0 +1,62 @@
+.work-sample {
+  width: 100%;
+
+  &:hover {
+    text-decoration: none;
+    color: #ff6801;
+  }
+
+  .work-sample__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 93%;
+    height: 420px;
+    margin-bottom: 20px;
+    background-position: center;
+
+    span {
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 22px;
+    }
+
+    .work-sample__item-btn {
+      padding: 0;
+      border: none;
+      color: inherit;
+      background-color: #ff6801;
+      cursor: pointer;
+      padding-right: 28px;
+      padding-left: 28px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 18px;
+      color: black;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+  }
+}
+
+.work-sample__item--ivkovka {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../../images/ivkovka.png);
+}
+
+.work-sample__item--life-star {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../../images/life-star.png);
+}
+
+.work-sample__item--tkani {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../../images/tkani-optom.png);
+}
+
+.work-sample__item--rafael {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../../images/rafael.png);
+}

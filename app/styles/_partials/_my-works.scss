@@ -1,0 +1,30 @@
+.my-works {
+  width: 100%;
+  height: 203px;
+  display: flex;
+
+  .my-works__header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    .my-works__header-line {
+      width: 38%;
+      border: 1px solid #e8e8e8;
+      height: 1px;
+    }
+
+    .my-works__header-text {
+      font-size: 50px;
+      text-align: center;
+      font-weight: 500;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
