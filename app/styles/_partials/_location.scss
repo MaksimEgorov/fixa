@@ -11,7 +11,8 @@
     align-items: center;
     padding-right: 30px;
 
-    .fa-map-marker-alt:before {
+    .fa-map-marker-alt:before,
+    .fa-chevron-left:before {
       color: #ff6801;
       padding-left: 15px;
     }
@@ -23,7 +24,8 @@
     align-items: center;
     padding-left: 30px;
 
-    .fa-phone:before {
+    .fa-phone:before,
+    .fa-chevron-right:before {
       color: #ff6801;
       padding-right: 15px;
     }
