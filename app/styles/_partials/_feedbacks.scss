@@ -1,0 +1,78 @@
+.feedbacks {
+  display: flex;
+  width: 100%;
+  padding-right: 130px;
+  padding-left: 130px;
+  margin-bottom: 50px;
+
+  .feedbacks-header {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 90px;
+    margin-bottom: 60px;
+  }
+
+  .feedback-container {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px #d3d3d3;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+
+    .feedback-container__heading {
+      display: flex;
+
+      .feedback-container__photo {
+        display: block;
+        padding-top: 20px;
+      }
+
+      .author-container {
+        display: inline-block;
+        margin-left: 30px;
+        margin-bottom: 25px;
+
+        .feedback-container__author {
+          display: block;
+          font-size: 20px;
+          text-transform: uppercase;
+          font-weight: 400;
+        }
+
+        .feedback-container__author-profile {
+          display: block;
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+        .social-logo.social-logo--vk,
+        .social-logo.social-logo--instagram,
+        .social-logo.social-logo--telegram,
+        .social-logo.social-logo--facebook {
+          margin-right: 17px;
+          color: black;
+          font-size: 22px;
+
+          &:hover {
+            color: #ff6801;
+          }
+        }
+      }
+
+      .feedback-container__author-massage {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .feedbacks__more-btn.more-btn {
+    margin-top: 40px;
+    width: 285px;
+  }
+}

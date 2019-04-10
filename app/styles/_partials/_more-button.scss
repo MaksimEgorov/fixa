@@ -1,0 +1,22 @@
+.more-btn {
+    padding: 0;
+    border: none;
+    color: inherit;
+    background-color: #ff6801;
+    cursor: pointer;
+    padding-right: 28px;
+    padding-left: 28px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: all 0.3s;
+    &:hover{
+      background-color: #ff771a;
+    }
+  }
+
+
+  

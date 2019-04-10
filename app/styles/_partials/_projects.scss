@@ -6,6 +6,16 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../../images/projects-bgr.png);
   margin-top: 80px;
 
+  .projects__header {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 90px;
+    margin-bottom: 60px;
+  }
+
   .projects-wrapper {
     display: flex;
     width: 100%;
@@ -33,15 +43,5 @@
         }
       }
     }
-  }
-
-  .projects__header {
-    font-size: 50px;
-    text-align: center;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: white;
-    margin-top: 90px;
-    margin-bottom: 60px;
   }
 }
