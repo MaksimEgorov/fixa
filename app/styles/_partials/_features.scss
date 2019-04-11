@@ -22,6 +22,8 @@
       text-align: center;
       overflow: hidden;
       transition: all 0.3s;
+      background-repeat: no-repeat;
+      background-size: cover;
 
       img {
         margin-bottom: 35px;
@@ -34,7 +36,6 @@
 
     .features__item--image1 {
       background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../images/background-advantages.png);
-
       &:hover {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/background-advantages.png);
         transform: scale(1.1);
