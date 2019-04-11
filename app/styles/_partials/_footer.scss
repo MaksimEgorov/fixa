@@ -45,3 +45,18 @@
     }
   }
 }
+
+
+@media (max-width: 1111px){
+  .footer .footer__navigation.navigation-menu .navigation__item {
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 15px;
+  }
+
+  .container.footer-bottom__container{
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
+  }
+}

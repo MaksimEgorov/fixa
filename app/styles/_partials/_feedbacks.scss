@@ -13,6 +13,7 @@
     color: #000000;
     margin-top: 90px;
     margin-bottom: 60px;
+    transition: all 0.3s;
   }
 
   .feedback-container {
@@ -67,9 +68,11 @@
         }
       }
 
-      .feedback-container__author-massage {
-        font-size: 18px;
-      }
+
+    }
+
+    .feedback-container__author-massage {
+      font-size: 16px;
     }
   }
 
@@ -79,3 +82,58 @@
     text-transform: uppercase;
   }
 }
+
+
+@media (max-width: 1380px) {
+  .feedbacks {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1111px) {
+  .feedbacks .feedbacks-header {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .feedbacks .feedback-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .feedbacks .feedback-container .feedback-container__heading .feedback-container__photo {
+    margin-top: 0;
+  }
+
+  .feedbacks .feedback-container .feedback-container__heading .author-container .feedback-container__author {
+    font-size: 15px;
+  }
+
+  .feedbacks .feedback-container .feedback-container__heading .author-container .feedback-container__author-profile {
+    font-size: 12px;
+  }
+
+  .feedbacks .feedback-container .feedback-container__heading .author-container .social-logo.social-logo--vk,
+  .feedbacks .feedback-container .feedback-container__heading .author-container .social-logo.social-logo--instagram,
+  .feedbacks .feedback-container .feedback-container__heading .author-container .social-logo.social-logo--telegram,
+  .feedbacks .feedback-container .feedback-container__heading .author-container .social-logo.social-logo--facebook {
+    font-size: 15px;
+  }
+
+  .col-4.width-60 {
+    max-width: 80%;
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+  .feedbacks .feedback-container .feedback-container__author-massage {
+    font-size: 15px;
+  }
+  .feedbacks .feedbacks__more-btn.more-btn{
+    margin-top: 20px;
+  }
+}
+

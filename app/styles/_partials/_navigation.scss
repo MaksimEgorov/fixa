@@ -55,10 +55,18 @@
 }
 
 @media (max-width: 1420px) {
-  .navigation-menu .navigation__item{
+  .navigation-menu .navigation__item {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+
+
+@media (max-width: 1111px) {
+  .navigation-menu .navigation__item {
     padding-left: 17px;
     padding-right: 17px;
     font-size: 15px;
   }
-  
 }
