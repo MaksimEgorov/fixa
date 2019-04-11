@@ -12,9 +12,11 @@
     color: black;
     font-weight: 500;
     margin-top: 10px;
-    transition: all 0.3s;
+    box-shadow: inset 0 0 0 #ff6801;
+    transition: all ease-in-out 0.5s;
     &:hover{
-      background-color: #ff771a;
+      color: #ffffff;
+      box-shadow: inset 285px 0 0  #212121;
     }
   }
 
