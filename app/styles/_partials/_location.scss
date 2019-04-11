@@ -3,6 +3,8 @@
   justify-content: center;
   color: white;
   font-size: 20px;
+   
+
 
   .location__city {
     display: flex;
@@ -23,6 +25,9 @@
     height: 44px;
     align-items: center;
     padding-left: 30px;
+    color: white;
+    text-decoration:none;
+    
 
     .fa-phone:before,
     .fa-chevron-right:before {

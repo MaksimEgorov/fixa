@@ -24,6 +24,9 @@
 
   .footer__location.location {
     color: #d0d0d0;
+    .location__number{
+      color: #d0d0d0;
+    }
   
     .location__city {
       border-right: 2px solid #d0d0d0;
@@ -33,7 +36,7 @@
   .footer__social {
     text-align: center;
     margin-top: 30px;
-    font-size: 40px;
+    font-size: 30px;
   
   
     .social-logo {
