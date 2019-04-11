@@ -19,18 +19,36 @@
     align-items: center;
     background-color: #212121;
     font-weight: 400;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 5px;
+      background: #ff6801;
+      transition: width 0.3s;
+      bottom: 0px;
+      left: 0;
+      z-index: 1;
+    }
 
     &:hover {
       color: #fff;
-      border-bottom: #ff6801 solid 2px;
+
+      &:before {
+        width: 100%;
+      }
     }
   }
-  .navigation__item--active{
-      background-color: #ff6801;
+
+  .navigation__item--active {
+    background-color: #ff6801;
+    color: #212121;
+
+    &:hover {
       color: #212121;
-      &:hover{
-          color: #212121;
-          border-bottom: none;
-      }
+      border-bottom: none;
+    }
   }
 }
