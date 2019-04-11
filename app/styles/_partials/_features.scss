@@ -8,6 +8,7 @@
     height: 424px;
     width: 25%;
     overflow: hidden;
+    transition: all 0.3s;
 
 
     .features__item {
@@ -70,3 +71,13 @@
     }
   }
 }
+
+@media (max-width: 1111px){
+  .features .features__item-container{
+    height: 242px;
+  }
+  .features .features__item-container .features__item{
+    font-size: 15px;
+  }
+}
+

@@ -3,7 +3,8 @@
   justify-content: center;
   color: white;
   font-size: 20px;
-   
+  transition: all 0.3s;
+
 
 
   .location__city {
@@ -26,13 +27,19 @@
     align-items: center;
     padding-left: 30px;
     color: white;
-    text-decoration:none;
-    
+    text-decoration: none;
+
 
     .fa-phone:before,
     .fa-chevron-right:before {
       color: #ff6801;
       padding-right: 15px;
     }
+  }
+}
+
+@media (max-width: 1111px) {
+  .location {
+    font-size: 15px;
   }
 }

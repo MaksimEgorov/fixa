@@ -13,6 +13,7 @@
   height: 420px;
   position: relative;
   margin-bottom: 20px;
+  transition: all 0.3s;
 
   &:before {
     content: '';
@@ -47,11 +48,13 @@
       font-size: 30px;
       text-transform: uppercase;
       font-weight: 400;
+      transition: all 0.3s;
     }
 
     p {
       margin-top: 10px;
       font-size: 22px;
+      transition: all 0.3s;
     }
 
     .work-sample__item-btn {
@@ -108,5 +111,25 @@
   &:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../images/rafael.png);
     transform: scale(1.1);
+  }
+}
+
+
+@media (max-width: 1111px) {
+  .work-sample__container .work-sample__item span {
+    font-size: 20px;
+  }
+
+  .work-sample__container .work-sample__item p {
+    font-size: 14px;
+  }
+
+  .work-sample__container{
+    height: 330px;
+    width: 100%;
+  }
+
+  .work-sample__container .work-sample__item{
+    height: 100%;
   }
 }
