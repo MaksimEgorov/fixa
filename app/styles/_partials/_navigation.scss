@@ -9,6 +9,11 @@
   }
 }
 
+@mixin closeLine() {
+  width: 24px;
+  height: 2px;
+}
+
 .navigation {
   display: flex;
   flex-direction: column;
@@ -95,11 +100,13 @@
   .header {
     padding-top: 20px;
     padding-bottom: 20px;
+    
+    .navigation-menu {
+      display: none;
+    }
   }
 
-  .navigation-menu {
-    display: none;
-  }
+  
 
   .navigation {
     flex-direction: row;
@@ -129,7 +136,7 @@
       position: absolute;
       top: 50%;
       margin-top: -1px;
-      right: 21px;
+      right: 22px;
 
       @include burgerLine();
 
@@ -160,20 +167,43 @@
       align-items: center;
       justify-content: center;
 
-      .location{
+      .location {
         position: absolute;
         display: flex;
         left: 10px;
         top: 20px;
       }
-      .navigation-menu{
+
+      .navigation-menu {
         display: flex;
         flex-direction: column;
       }
-      .mobile-menu-btn{
+
+      .mobile-menu-btn {
         position: absolute;
         top: 20px;
         right: 10px;
+        z-index: 1;
+
+        .mobile-menu-btn__icon {
+          background: none;
+          right: 25px;
+
+          &:before {
+
+            @include closeLine();
+            top: 0;
+            left: 0;
+            transform: rotate(45deg);
+          }
+
+          &:after {
+            @include closeLine();
+            top: 0;
+            left: 0;
+            transform: rotate(135deg);
+          }
+        }
       }
     }
   }

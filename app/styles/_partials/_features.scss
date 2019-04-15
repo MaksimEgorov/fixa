@@ -81,3 +81,11 @@
   }
 }
 
+@media (max-width: 720px){
+  .features{
+    flex-wrap: wrap;
+  }
+  .features .features__item-container{
+    width: 50%;
+  }
+}
