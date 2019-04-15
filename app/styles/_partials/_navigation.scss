@@ -1,3 +1,23 @@
+@mixin burgerLine($absolute: false, $width: 16px, $height: 2px) {
+  width: $width;
+  height: $height;
+  background: #ffff;
+
+  @if $absolute {
+    position: absolute;
+    content: "";
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
 .navigation-menu {
   width: 100%;
   display: inline-flex;
@@ -68,5 +88,93 @@
     padding-left: 17px;
     padding-right: 17px;
     font-size: 15px;
+  }
+}
+
+@media (max-width: 720px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .navigation-menu {
+    display: none;
+  }
+
+  .navigation {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navigation .mobile-menu-btn {
+    display: block;
+    position: relative;
+    border: none;
+    width: 60px;
+    height: 40px;
+    background-color: #ff6801;
+    align-content: center;
+    padding: 0;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+
+    .mobile-menu-btn__icon {
+      position: absolute;
+      top: 50%;
+      margin-top: -1px;
+      right: 21px;
+
+      @include burgerLine();
+
+      &:before {
+        @include burgerLine(true);
+        top: -5px;
+        left: 0;
+      }
+
+      &:after {
+        @include burgerLine(true);
+        top: 5px;
+        left: 0;
+      }
+    }
+  }
+
+  .html-navigation-mobile-open {
+    .navigation {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: #212121;
+      z-index: 2;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+
+      .location{
+        position: absolute;
+        display: flex;
+        left: 10px;
+        top: 20px;
+      }
+      .navigation-menu{
+        display: flex;
+        flex-direction: column;
+      }
+      .mobile-menu-btn{
+        position: absolute;
+        top: 20px;
+        right: 10px;
+      }
+    }
   }
 }
