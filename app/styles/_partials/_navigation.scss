@@ -100,6 +100,7 @@
   .header {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-size: cover;
     
     .navigation-menu {
       display: none;
@@ -190,7 +191,6 @@
           right: 25px;
 
           &:before {
-
             @include closeLine();
             top: 0;
             left: 0;
@@ -205,6 +205,15 @@
           }
         }
       }
+    }
+  }
+}
+
+
+@media (max-width: 600px){
+  .navigation{
+    .location .location__city{
+      display: none;
     }
   }
 }

@@ -4,26 +4,40 @@
   padding-top: 40px;
   padding-bottom: 40px;
   color: #d0d0d0;
-  .footer__bottom.location{
+
+  .footer__bottom.location {
     padding-left: 19px;
   }
 }
 
-.footer__bottom__agreement.location__city{
-    border-right: 2px solid #d0d0d0;
+.footer__bottom__agreement.location__city {
+  border-right: 2px solid #d0d0d0;
 }
 
 .footer__bottom__agreement.location__city,
 .footer__bottom__politics.location__number {
   text-decoration: none;
-  color:#d0d0d0;
+  color: #d0d0d0;
+
   &:hover {
     color: #ff6801;
   }
 }
 
+.footer-bottom__copyright {
+  font-size: 16px;
+  margin-top: 20px;
+}
 
-.footer-bottom__copyright{
-    font-size: 16px;
-    margin-top: 20px;
+@media (max-width: 577px) {
+
+  .footer__bottom__agreement.location__city,
+  .footer__bottom__politics.location__number {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  .footer-bottom__copyright{
+    font-size: 13px;
+  }
 }

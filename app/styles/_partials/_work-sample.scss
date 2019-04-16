@@ -141,11 +141,21 @@
   }
   .work-sample__container .work-sample__item{
     background-size: cover;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
   }
   .work-sample__container .work-sample__item span{
     font-size: 17px;
   }
   .work-sample__container .work-sample__item p {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 600px){
+  .col-5.work-sample__media-600{
+    flex: 0 0 90%;
+    max-width: 80%;
   }
 }

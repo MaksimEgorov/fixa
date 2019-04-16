@@ -101,3 +101,34 @@
     height: 70px;
   }
 }
+
+@media (max-width: 600px){
+  .projects{
+    margin-top: 40px;
+    height: auto;
+    padding-bottom: 30px;
+
+    .projects__header{
+      font-size: 22px;
+      margin-top: 40px;
+    }
+
+    .projects-wrapper{
+      flex-wrap: wrap;
+    }
+  }
+  .col-3.project__item-container{
+    flex-basis: 51%;
+    margin-bottom: 10px;
+  }
+
+  .projects .projects-wrapper .project__item .book-btn:hover{
+    box-shadow: inset 278px 0 0 0 #212121;
+  }
+}
+
+@media (max-width: 450px){
+  .col-3.project__item-container{
+    flex-basis: 71%;
+  }
+}
