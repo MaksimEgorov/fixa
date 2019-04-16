@@ -78,10 +78,10 @@
 
 
 .work-sample__item--ivkovka {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../images/ivkovka.png);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../images/ivkovka.png);
 
   &:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../images/ivkovka.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/ivkovka.png);
     transform: scale(1.1);
   }
 }
@@ -89,28 +89,28 @@
 
 
 .work-sample__item--life-star {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../images/life-star.png);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../images/life-star.png);
 
   &:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../images/life-star.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/life-star.png);
     transform: scale(1.1);
   }
 }
 
 .work-sample__item--tkani {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../images/tkani-optom.png);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../images/tkani-optom.png);
 
   &:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../images/tkani-optom.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/tkani-optom.png);
     transform: scale(1.1);
   }
 }
 
 .work-sample__item--rafael {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../images/rafael.png);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../images/rafael.png);
 
   &:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../images/rafael.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/rafael.png);
     transform: scale(1.1);
   }
 }
@@ -125,36 +125,39 @@
     font-size: 14px;
   }
 
-  .work-sample__container{
+  .work-sample__container {
     height: 330px;
     width: 100%;
   }
 
-  .work-sample__container .work-sample__item{
+  .work-sample__container .work-sample__item {
     height: 100%;
   }
 }
 
-@media (max-width: 720px){
-  .work-sample__container{
+@media (max-width: 720px) {
+  .work-sample__container {
     height: 200px;
   }
-  .work-sample__container .work-sample__item{
+
+  .work-sample__container .work-sample__item {
     background-size: cover;
     padding-right: 10px;
     padding-left: 10px;
     text-align: center;
   }
-  .work-sample__container .work-sample__item span{
+
+  .work-sample__container .work-sample__item span {
     font-size: 17px;
   }
+
   .work-sample__container .work-sample__item p {
     font-size: 12px;
   }
 }
 
-@media (max-width: 600px){
-  .col-5.work-sample__media-600{
+@media (max-width: 600px) {
+  .col-5.work-sample__media-600 {
     flex: 0 0 90%;
     max-width: 80%;
   }

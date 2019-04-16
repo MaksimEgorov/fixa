@@ -36,36 +36,36 @@
     }
 
     .features__item--image1 {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../images/background-advantages.png);
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(../images/background-advantages.png);
       &:hover {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/background-advantages.png);
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(../images/background-advantages.png);
         transform: scale(1.1);
       }
     }
 
     .features__item--image2 {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../images/background-advantages2.png);
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(../images/background-advantages2.png);
 
       &:hover {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/background-advantages2.png);
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(../images/background-advantages2.png);
         transform: scale(1.1);
       }
     }
 
     .features__item--image3 {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../images/background-advantages3.png);
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(../images/background-advantages3.png);
 
       &:hover {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/background-advantages3.png);
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(../images/background-advantages3.png);
         transform: scale(1.1);
       }
     }
 
     .features__item--image4 {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../images/background-advantages4.png);
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(../images/background-advantages4.png);
 
       &:hover {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/background-advantages4.png);
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(../images/background-advantages4.png);
         transform: scale(1.1);
       }
     }
