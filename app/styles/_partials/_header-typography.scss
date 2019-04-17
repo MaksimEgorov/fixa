@@ -1,0 +1,49 @@
+.location-wrapper {
+  display: flex;
+  justify-content: space-around;
+  height: 85px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.header-typography {
+  padding-top: 0;
+  height: auto;
+  background: none;
+  background: url(../images/typography-header-bgr.png);
+
+  &::before {
+    background: none;
+  }
+}
+
+.navigation-menu--typography {
+  background: #212121;
+  margin-top: 0;
+}
+
+.container-fluid--header-typography {
+  padding: 0;
+}
+
+.main-text {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.location__number.second-text {
+  color: #999999;
+  font-size: 16px;
+}
+
+.typography__location {
+  color: #999999;
+
+  .location__number--typography {
+    color: white;
+    font-weight: 400;
+  }
+}
