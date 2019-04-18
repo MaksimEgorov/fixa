@@ -1,6 +1,6 @@
 .location-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 85px;
   padding-top: 10px;
   padding-right: 10px;
@@ -13,6 +13,7 @@
   height: auto;
   background: none;
   background: url(../images/typography-header-bgr.png);
+  background-repeat: no-repeat;
 
   &::before {
     background: none;
@@ -22,6 +23,12 @@
 .navigation-menu--typography {
   background: #212121;
   margin-top: 0;
+  margin: 0 auto;
+
+  .navigation__item--typography {
+    padding-right: 103px;
+    padding-left: 103px;
+  }
 }
 
 .container-fluid--header-typography {
@@ -35,12 +42,12 @@
 }
 
 .location__number.second-text {
-  color: #999999;
+  color: #c7c7c7;
   font-size: 16px;
 }
 
 .typography__location {
-  color: #999999;
+  color: #c7c7c7;
 
   .location__number--typography {
     color: white;
