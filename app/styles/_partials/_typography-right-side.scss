@@ -1,17 +1,8 @@
 .typography__right-side {
   padding-top: 140px;
 
-  .right-side__h3 {
+  .right-side {
     margin-bottom: 20px;
-
-    h3 {
-      font-size: 30px;
-      font-weight: 600;
-    }
-
-    p {
-      font-size: 20px;
-    }
   }
 
   .right-side__underline {
@@ -38,7 +29,6 @@
 
         h3 {
           color: #ffffff;
-          font-size: 30px;
           margin-bottom: 0;
         }
       }
@@ -55,13 +45,7 @@
     }
   }
 
-  .right-side__ul-links {
-    h3 {
-      font-size: 30px;
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
-
+  .right-side__links {
     ul {
       padding-left: 0px;
 
@@ -96,8 +80,8 @@
   }
 }
 
-@media (max-width: 1495px){
-  .typography__right-side{
+@media (max-width: 1495px) {
+  .typography__right-side {
     padding-top: 100px;
   }
 }
