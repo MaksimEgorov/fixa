@@ -81,13 +81,6 @@
   margin-right: 85px;
 }
 
-/* .main-content__h1 {
-  font-size: 50px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  margin-bottom: 25px;
-} */
 
 .main-content__header {
   display: flex;
@@ -115,52 +108,6 @@
   }
 }
 
-/* .main-content__typography {
-  margin-top: 55px;
-
-  .main-content__h2 {
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-
-  p {
-    font-size: 21px;
-    font-weight: 400;
-  }
-
-  .main-content__ul {
-    margin-top: 30px;
-
-  ul {
-      font-size: 21px;
-      padding-left: 20px;
-      font-weight: 400;
-
-      li {
-        margin-bottom: 10px;
-      }
-    }
-} */
-
-
-/* .main-content__ol {
-  margin-top: 30px;
-
-  ol {
-      font-size: 21px;
-      padding-left: 20px;
-      font-weight: 400;
-
-      li {
-        margin-bottom: 10px;
-      }
-    }
-
-} */
-
-
-
 td {
   .fas {
     color: #ff6801;
@@ -171,10 +118,6 @@ td {
   }
 }
 
-/* .main-content__table {
-  margin-top: 30px;
-  margin-bottom: 80px;
-} */
 
 table {
   border: 1px solid #c3c3c3;
@@ -219,10 +162,6 @@ table {
     padding-left: 10px;
     padding-right: 10px;
 
-  /*   span {
-      font-size: 26px;
-    } */
-
     .more-btn--table {
       text-transform: uppercase;
       width: 100%;
@@ -242,5 +181,44 @@ table {
     margin-left: 30px;
     padding-right: 80px;
     padding-top: 100px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .main-content__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 30px;
+  }
+
+  .col-8.col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .col-shadow {
+    box-shadow: none;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 992px){
+  .main-content__wrapper{
+    padding-top: 20px;
+  }
+  .container-typography h1{
+    font-size: 32px;
+  }
+  .main-content__date,
+  .main-content__social{
+    font-size: 16px;
+  }
+  .container-typography h3{
+    font-size: 24px;
+  }
+  .container-typography p,
+  .container-typography ul,
+  .container-typography ol{
+    font-size: 16px;
   }
 }
