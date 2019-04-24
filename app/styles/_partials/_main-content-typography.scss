@@ -221,4 +221,17 @@ table {
   .container-typography ol{
     font-size: 16px;
   }
+  table{
+    tr{
+      td{
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .first-column{
+        font-size: 16px;
+      }
+    }
+  }
 }
+
