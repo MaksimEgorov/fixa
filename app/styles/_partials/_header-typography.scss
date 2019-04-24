@@ -133,3 +133,9 @@
     padding-right: 30px;
   }
 }
+
+@media (max-width: 720px) {
+  .header-typography .container.location-wrapper {
+    padding: 0;
+  }
+}

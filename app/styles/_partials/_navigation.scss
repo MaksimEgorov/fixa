@@ -101,13 +101,13 @@
     padding-top: 20px;
     padding-bottom: 20px;
     background-size: cover;
-    
+
     .navigation-menu {
       display: none;
     }
   }
 
-  
+
 
   .navigation {
     flex-direction: row;
@@ -209,10 +209,24 @@
   }
 }
 
+/* for typography page */
 
-@media (max-width: 600px){
-  .navigation{
-    .location .location__city{
+.html-navigation-mobile-open {
+  .location.location__brand {
+    display: none;
+  }
+
+  .header-typography .container.location-wrapper {
+    width: 0;
+    padding: 0;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .navigation {
+    .location .location__city {
       display: none;
     }
   }
