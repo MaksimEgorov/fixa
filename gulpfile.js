@@ -66,7 +66,7 @@ function html() {
     .pipe($.if(/\.js$/, $.uglify({compress: {drop_console: true}})))
     .pipe($.if(/\.css$/, $.postcss([cssnano({safe: true, autoprefixer: false})])))
     .pipe($.if(/\.html$/, $.htmlmin({
-      collapseWhitespace: true,
+      collapseWhitespace: false,
       minifyCSS: true,
       minifyJS: {compress: {drop_console: true}},
       processConditionalComments: true,
