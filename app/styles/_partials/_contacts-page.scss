@@ -1,14 +1,16 @@
 .contacts-container {
-  height: 1020px;
-  /* временно для сетки */
   width: 100%;
   display: flex;
   background-color: #f2f2f2;
+  padding-bottom: 50px;
+  height: 1020px;
 }
 
 .contacts-photo {
   width: 600px;
   height: 883px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .contacts-content {
@@ -106,11 +108,144 @@
   }
 }
 
-.contacts-map{
-  position: absolute;
-  right: 0px;
-  top: 353px;
-  width: 600px;
-  height: 600px;
-  z-index: 0;
+.contacts-map {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  height: 30%;
+  padding-top: 200px;
+}
+
+
+@media (max-width: 1700px) {
+  .contacts-map {
+    width: 30%;
+  }
+}
+
+/* @media (max-width: 1650px){
+  .contacts-container{
+    height: 850px;
+  }
+} */
+
+@media (max-width: 1500px) {
+  .contacts-container {
+    height: 850px;
+  }
+
+  .contacts-photo {
+    width: 450px;
+    height: 655px;
+  }
+
+  .contacts-content {
+    padding-top: 60px;
+    padding-left: 60px;
+
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  .contacts-map {
+    margin-left: auto;
+    padding-top: 150px;
+    padding-left: 20px;
+  }
+
+  .contacts-options__list .list__icons {
+    font-size: 29px;
+  }
+
+  .contacts-options__list .list__items {
+    padding: 20px;
+  }
+
+  .contacts-options__list .list__items .list__item {
+    a {
+      font-size: 16px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  .contacts-options__list {
+    width: 420px;
+    height: 334px;
+  }
+}
+
+
+@media (max-width: 1150px) {
+  .contacts-map {
+    display: none;
+  }
+
+  .contacts-options__list {
+    position: initial;
+  }
+
+  .header.header-typography.header-contacts {
+    padding: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .contacts-photo {
+    display: none;
+  }
+
+  .contacts-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .contacts-content{
+    padding: 0;
+    padding-top: 30px;
+  }
+  .contacts-options__list{
+    width: 280px;
+  }
+
+  .contacts-options__list .list__items .list__item {
+    a {
+      font-size: 14px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .contacts-options__list .list__icons {
+    font-size: 25px;
+  }
+
+  .contacts-content {
+    h1{
+      font-size: 40px;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+  .contacts-content .contacts__more-btn.more-btn{
+    font-size: 23px;
+    width: auto;
+    height: auto;
+  }
 }
