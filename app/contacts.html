@@ -61,7 +61,8 @@
       <div class="contacts-content">
         <h1>КОНТАКТЫ</h1>
         <p>Вы можете написать мне <br> прямо сейчас</p>
-        <button class="contacts__more-btn more-btn">Написать мне</button>
+        <button type="button" class="contacts__more-btn more-btn btn btn-primary" data-toggle="modal"
+          data-target="#exampleModalLong">Написать мне</button>
         <p>Или связаться со мной <br> удобным для Вас способом</p>
         <div class="contacts-options">
           <div class="contacts-options__list">
@@ -158,6 +159,49 @@
     </div>
   </div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header modal-title--black">
+          <h5 class="modal-title">Напишите мне</h5>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+        </div>
+        <div class="modal-body contacts-form">
+          <form>
+            <div class="form-row contacts-form__row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Ваше имя" required>
+              </div>
+            </div>
+            <div class="form-row contacts-form__row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Ваш e-mail" required>
+              </div>
+            </div>
+            <div class="form-row contacts-form__row">
+              <div class="col">
+                <!-- <input type="text" class="form-control contacts-form__input" placeholder="Ваше сообщение" required> -->
+                <textarea class="contacts-form__text" name="text-area" placeholder="Ваше сообщение" required></textarea>
+              </div>
+            </div>
+            <div class="contacts-form__btn-container">
+              <button class="btn btn-primary contacts-form__btn" type="submit">Отправить сообщение</button>
+            </div>
+          </form>
+          <p class="form-politics">Нажимая на кнопку "Отправить сообщение", вы даете <br>
+            <a href="#">согласие на обработку персональных данных</a>
+          </p>
+          <div class="modal-close">
+            <button type="button" class="btn " data-dismiss="modal">Закрыть окно</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- build:js scripts/vendor.js -->
   <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
