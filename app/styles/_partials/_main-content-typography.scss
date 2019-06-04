@@ -88,6 +88,26 @@
 
 .main-content__banner {
   margin-bottom: 60px;
+  width: 750px;
+  height: 490px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrow-wrapper {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff6801;
+  border-radius: 10px;
+}
+
+.carousel-caption-text {
+  background-color: gray;
+  opacity: 0.8;
 }
 
 .col-shadow {
@@ -202,6 +222,7 @@ table {
   }
 }
 
+
 @media (max-width: 1280px) {
   .main-content__wrapper {
     padding-left: 0;
@@ -217,6 +238,12 @@ table {
   .col-shadow {
     box-shadow: none;
     margin-right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .main-content__banner {
+    height: 430px;
   }
 }
 
@@ -276,7 +303,7 @@ table {
   }
 
   .main-content__banner {
-    height: 385px;
+    height: 457px;
     margin-bottom: 30px;
   }
 
